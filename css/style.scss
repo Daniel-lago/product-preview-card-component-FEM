@@ -17,33 +17,55 @@ html {
 }
 
 body {
-
   font-family: 'Montserrat', sans-serif;
 }
 
+// .card {
+// }
+
 h1{
   font-family: 'Fraunces', serif;
+    margin: 2rem;
+    font-size: 3rem;
 }
 
-.card {
-  
+.card-category{
+  margin: 2rem;
+  font-weight: 500;
 }
 
 .card-body{
   background-color: var(--white);
+  float: right;
+  width: 250px;
+  height: 40vh;
+  border-radius: 0 3% 3% 0;
 }
 
 .card-info {
-  font-size: 14px;
+  font-size: 13px;
+  margin: 2rem;
+  font-weight: 400;
 }
 
 .card-price {
   color: var(--dark-cyan);
+  margin: 2rem;
+  margin-top: 35px;
 }
 
-.card-payment {
+.card-button {
   background-color: var(--dark-cyan);
   color: var(--white);
+  margin: 2rem;
+  background: url(/product-preview-card-component-main/images/icon-cart.svg);
+}
+
+.card-picture {
+  float: left;
+  width: 250px;
+  height: 40vh;
+  border-radius: 3% 0 0% 3%;
 }
 
 .flex {
@@ -52,3 +74,6 @@ h1{
   align-items: center;
   height: 100vh;
 }
+
+
+
