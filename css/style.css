@@ -29,60 +29,71 @@ body {
 
 h1 {
   font-family: "Fraunces", serif;
-  margin: 2rem;
-  font-size: 3rem;
 }
 
-.card-category {
-  margin: 2rem;
-  font-weight: 500;
+.card-picture {
+  float: left;
+  width: 20%;
+  height: 50%;
+  border-radius: 3% 0 0% 3%;
 }
 
 .card-body {
+  display: flex;
+  flex-direction: column;
   background-color: var(--white);
   float: right;
-  width: 250px;
-  height: 40vh;
+  width: 20%;
+  height: 50%;
   border-radius: 0 3% 3% 0;
   position: relative;
 }
 
+.card-category {
+  margin: 1.5rem 2rem 0 2rem;
+  font-weight: 500;
+  height: 7%;
+  font-size: 1.5rem;
+}
+
+.card-title {
+  font-size: 3.5rem;
+  height: 30%;
+  margin: 1rem 2rem 0 2rem;
+}
+
 .card-info {
-  font-size: 13px;
-  margin: 2rem;
-  font-weight: 400;
+  margin: 0rem 2rem 0 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  height: 25%;
 }
 
 .card-price {
   position: relative;
   color: var(--dark-cyan);
-  margin: 35px 0 1rem 2rem;
+  font-size: 3rem;
+  height: 20%;
+  margin: 0rem 0 0rem 2rem;
 }
 
 .card-button {
   background-color: var(--dark-cyan);
   color: var(--white);
-  margin: 2rem;
-  background: url(/product-preview-card-component-main/images/icon-cart.svg);
-}
-
-.card-picture {
-  float: left;
-  width: 250px;
-  height: 40vh;
-  border-radius: 3% 0 0% 3%;
+  height: 15%;
 }
 
 .card-old-price {
-  position: absolute;
-  font-size: 35%;
+  position: relative;
+  font-size: 1.5rem;
   color: var(--dark-grayish-blue);
-  padding-top: 11px;
+  padding-top: 1.5rem;
   padding-left: 10px;
 }
 
 #card-button {
-  position: absolute;
+  position: relative;
   background-color: var(--dark-cyan);
   color: var(--white);
   height: 10%;
@@ -90,7 +101,7 @@ h1 {
   font-size: 1.15rem;
   font-weight: 900;
   border-radius: 10px;
-  margin: 10px 0 0 2rem;
+  margin: 0px 2rem 1rem 2rem;
   border-style: none;
   padding: 12px 0px 10px 0px;
 }
