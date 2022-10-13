@@ -16,6 +16,13 @@ html {
   box-sizing: inherit;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -37,6 +44,7 @@ h1 {
   width: 250px;
   height: 40vh;
   border-radius: 0 3% 3% 0;
+  position: relative;
 }
 
 .card-info {
@@ -46,9 +54,9 @@ h1 {
 }
 
 .card-price {
+  position: relative;
   color: var(--dark-cyan);
-  margin: 2rem;
-  margin-top: 35px;
+  margin: 35px 0 1rem 2rem;
 }
 
 .card-button {
@@ -65,9 +73,29 @@ h1 {
   border-radius: 3% 0 0% 3%;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.card-old-price {
+  position: absolute;
+  font-size: 35%;
+  color: var(--dark-grayish-blue);
+  padding-top: 11px;
+  padding-left: 10px;
+}
+
+#card-button {
+  position: absolute;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  height: 10%;
+  width: 80%;
+  font-size: 1.15rem;
+  font-weight: 900;
+  border-radius: 10px;
+  margin: 10px 0 0 2rem;
+  border-style: none;
+  padding: 12px 0px 10px 0px;
+}
+
+.cart-text {
+  position: relative;
+  padding: 12px 4px 1px 10px;
 }/*# sourceMappingURL=style.css.map */
