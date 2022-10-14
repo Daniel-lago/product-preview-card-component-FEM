@@ -16,12 +16,21 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 100vh;
+}
+
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0px auto;
+  height: 480px;
+  width: 600px;
 }
 
 body {
@@ -30,10 +39,8 @@ body {
 
 .card-picture {
   display: flex;
-  min-width: 100px;
-  width: 20%;
-  max-width: 250px;
-  height: 48%;
+  width: 50%;
+  height: 100%;
   border-radius: 3% 0 0% 3%;
 }
 
@@ -41,10 +48,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  min-width: 100px;
-  width: 20%;
-  max-width: 250px;
-  height: 48%;
+  width: 50%;
+  height: 100%;
   border-radius: 0 3% 3% 0;
 }
 
@@ -57,24 +62,30 @@ body {
 .card-category h3 {
   font-weight: 300;
   color: var(--dark-grayish-blue);
+  letter-spacing: 0.1rem;
 }
 
 .card-title {
   overflow: hidden;
   font-family: "Fraunces", serif;
-  font-size: 1.4rem;
-  margin: 0rem 2rem 0 2rem;
+  font-size: 1.9rem;
+  margin: 0 2rem 0 2rem;
+}
+
+.card-title h1 {
+  margin: 0 0;
 }
 
 .card-info {
   overflow: hidden;
   margin: 0rem 2rem 0 2rem;
-  font-weight: 100;
-  font-size: 1.25rem;
-  line-height: 2.5rem;
+  font-weight: 300;
+  font-size: 1.55rem;
+  line-height: 2.1rem;
 }
 
 .card-info p {
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   color: var(--dark-grayish-blue);
 }
@@ -84,7 +95,7 @@ body {
   display: flex;
   position: relative;
   color: var(--dark-cyan);
-  font-size: 1.4rem;
+  font-size: 1.9rem;
   margin: 0rem 2rem 0rem 2rem;
   align-content: center;
 }
@@ -95,37 +106,37 @@ body {
 }
 
 .card-old-price {
-  padding: 1.2rem 0 0 2rem;
+  padding: 2.3rem 0 0 2rem;
   float: right;
   position: relative;
   font-family: "Fraunces", serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--dark-grayish-blue);
   align-content: center;
 }
 
 .card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   background-color: var(--dark-cyan);
   color: var(--white);
   margin: 1rem 2rem 0 2rem;
   border-radius: 10px;
+  border-style: none;
+  height: 11%;
+  transition-duration: 0.4s;
 }
 
-.card-button button {
-  position: relative;
-  background-color: var(--dark-cyan);
-  color: var(--white);
-  height: 100%;
-  width: 80%;
-  font-size: 1.2rem;
-  font-weight: 900;
-  margin: 0px 2rem 0rem 2rem;
-  border-style: none;
-  padding: 12px 0px 13px 0px;
+.card-button:hover {
+  background-color: hsl(158deg, 36%, 20%);
+  cursor: pointer;
 }
 
 .cart-text {
   position: relative;
+  font-size: 1.5em;
   font-weight: 600;
+  padding-left: 1rem;
 }/*# sourceMappingURL=style.css.map */
