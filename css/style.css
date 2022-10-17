@@ -38,7 +38,7 @@ body {
 }
 
 .card-picture {
-  background: url(../images/image-product-desktop.jpg) no-repeat;
+  background-image: url(../images/image-product-desktop.jpg) no-repeat;
   background-size: cover;
   display: flex;
   width: 50%;
