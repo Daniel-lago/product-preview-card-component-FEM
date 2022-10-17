@@ -38,12 +38,12 @@ body {
 }
 
 .card-picture {
-  background: url(/product-preview-card-component-main/images/image-product-desktop.jpg) no-repeat;
+  background: url(../images/image-product-desktop.jpg) no-repeat;
   background-size: cover;
   display: flex;
   width: 50%;
   height: 100%;
-  border-radius: 3% 0 0% 3%;
+  border-radius: 3% 0 0 3%;
 }
 
 .card-body {
@@ -151,7 +151,7 @@ body {
     height: 80%;
   }
   .card-picture {
-    background: url(/product-preview-card-component-main/images/image-product-mobile.jpg) no-repeat;
+    background: url(../images/image-product-mobile.jpg) no-repeat;
     background-size: cover;
     margin: 0 1rem 0 1rem;
     width: 100%;
